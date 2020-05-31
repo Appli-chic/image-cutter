@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A753D02E248402D0007885DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753D02D248402D0007885DD /* AppDelegate.swift */; };
+		A753D030248402D0007885DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753D02F248402D0007885DD /* ContentView.swift */; };
+		A753D032248402D1007885DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A753D031248402D1007885DD /* Assets.xcassets */; };
+		A753D035248402D1007885DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A753D034248402D1007885DD /* Preview Assets.xcassets */; };
+		A753D038248402D1007885DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A753D036248402D1007885DD /* Main.storyboard */; };
+		A753D044248402D1007885DD /* Image_CutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753D043248402D1007885DD /* Image_CutterTests.swift */; };
+		A753D04F248402D1007885DD /* Image_CutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753D04E248402D1007885DD /* Image_CutterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A753D040248402D1007885DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A753D022248402D0007885DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A753D029248402D0007885DD;
+			remoteInfo = "Image Cutter";
+		};
+		A753D04B248402D1007885DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A753D022248402D0007885DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A753D029248402D0007885DD;
+			remoteInfo = "Image Cutter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A753D02A248402D0007885DD /* Image Cutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Cutter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A753D02D248402D0007885DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A753D02F248402D0007885DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A753D031248402D1007885DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A753D034248402D1007885DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A753D037248402D1007885DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A753D039248402D1007885DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A753D03A248402D1007885DD /* Image_Cutter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Image_Cutter.entitlements; sourceTree = "<group>"; };
+		A753D03F248402D1007885DD /* Image CutterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image CutterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A753D043248402D1007885DD /* Image_CutterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_CutterTests.swift; sourceTree = "<group>"; };
+		A753D045248402D1007885DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A753D04A248402D1007885DD /* Image CutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image CutterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A753D04E248402D1007885DD /* Image_CutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_CutterUITests.swift; sourceTree = "<group>"; };
+		A753D050248402D1007885DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A753D027248402D0007885DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753D03C248402D1007885DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753D047248402D1007885DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A753D021248402D0007885DD = {
+			isa = PBXGroup;
+			children = (
+				A753D02C248402D0007885DD /* Image Cutter */,
+				A753D042248402D1007885DD /* Image CutterTests */,
+				A753D04D248402D1007885DD /* Image CutterUITests */,
+				A753D02B248402D0007885DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A753D02B248402D0007885DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A753D02A248402D0007885DD /* Image Cutter.app */,
+				A753D03F248402D1007885DD /* Image CutterTests.xctest */,
+				A753D04A248402D1007885DD /* Image CutterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A753D02C248402D0007885DD /* Image Cutter */ = {
+			isa = PBXGroup;
+			children = (
+				A753D02D248402D0007885DD /* AppDelegate.swift */,
+				A753D02F248402D0007885DD /* ContentView.swift */,
+				A753D031248402D1007885DD /* Assets.xcassets */,
+				A753D036248402D1007885DD /* Main.storyboard */,
+				A753D039248402D1007885DD /* Info.plist */,
+				A753D03A248402D1007885DD /* Image_Cutter.entitlements */,
+				A753D033248402D1007885DD /* Preview Content */,
+			);
+			path = "Image Cutter";
+			sourceTree = "<group>";
+		};
+		A753D033248402D1007885DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A753D034248402D1007885DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A753D042248402D1007885DD /* Image CutterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A753D043248402D1007885DD /* Image_CutterTests.swift */,
+				A753D045248402D1007885DD /* Info.plist */,
+			);
+			path = "Image CutterTests";
+			sourceTree = "<group>";
+		};
+		A753D04D248402D1007885DD /* Image CutterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A753D04E248402D1007885DD /* Image_CutterUITests.swift */,
+				A753D050248402D1007885DD /* Info.plist */,
+			);
+			path = "Image CutterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A753D029248402D0007885DD /* Image Cutter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A753D053248402D1007885DD /* Build configuration list for PBXNativeTarget "Image Cutter" */;
+			buildPhases = (
+				A753D026248402D0007885DD /* Sources */,
+				A753D027248402D0007885DD /* Frameworks */,
+				A753D028248402D0007885DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Image Cutter";
+			productName = "Image Cutter";
+			productReference = A753D02A248402D0007885DD /* Image Cutter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A753D03E248402D1007885DD /* Image CutterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A753D056248402D1007885DD /* Build configuration list for PBXNativeTarget "Image CutterTests" */;
+			buildPhases = (
+				A753D03B248402D1007885DD /* Sources */,
+				A753D03C248402D1007885DD /* Frameworks */,
+				A753D03D248402D1007885DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A753D041248402D1007885DD /* PBXTargetDependency */,
+			);
+			name = "Image CutterTests";
+			productName = "Image CutterTests";
+			productReference = A753D03F248402D1007885DD /* Image CutterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A753D049248402D1007885DD /* Image CutterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A753D059248402D1007885DD /* Build configuration list for PBXNativeTarget "Image CutterUITests" */;
+			buildPhases = (
+				A753D046248402D1007885DD /* Sources */,
+				A753D047248402D1007885DD /* Frameworks */,
+				A753D048248402D1007885DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A753D04C248402D1007885DD /* PBXTargetDependency */,
+			);
+			name = "Image CutterUITests";
+			productName = "Image CutterUITests";
+			productReference = A753D04A248402D1007885DD /* Image CutterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A753D022248402D0007885DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Lazyos;
+				TargetAttributes = {
+					A753D029248402D0007885DD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A753D03E248402D1007885DD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A753D029248402D0007885DD;
+					};
+					A753D049248402D1007885DD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A753D029248402D0007885DD;
+					};
+				};
+			};
+			buildConfigurationList = A753D025248402D0007885DD /* Build configuration list for PBXProject "Image Cutter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A753D021248402D0007885DD;
+			productRefGroup = A753D02B248402D0007885DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A753D029248402D0007885DD /* Image Cutter */,
+				A753D03E248402D1007885DD /* Image CutterTests */,
+				A753D049248402D1007885DD /* Image CutterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A753D028248402D0007885DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A753D038248402D1007885DD /* Main.storyboard in Resources */,
+				A753D035248402D1007885DD /* Preview Assets.xcassets in Resources */,
+				A753D032248402D1007885DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753D03D248402D1007885DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753D048248402D1007885DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A753D026248402D0007885DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A753D030248402D0007885DD /* ContentView.swift in Sources */,
+				A753D02E248402D0007885DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753D03B248402D1007885DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A753D044248402D1007885DD /* Image_CutterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753D046248402D1007885DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A753D04F248402D1007885DD /* Image_CutterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A753D041248402D1007885DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A753D029248402D0007885DD /* Image Cutter */;
+			targetProxy = A753D040248402D1007885DD /* PBXContainerItemProxy */;
+		};
+		A753D04C248402D1007885DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A753D029248402D0007885DD /* Image Cutter */;
+			targetProxy = A753D04B248402D1007885DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A753D036248402D1007885DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A753D037248402D1007885DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A753D051248402D1007885DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A753D052248402D1007885DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A753D054248402D1007885DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Image Cutter/Image_Cutter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Image Cutter/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Image Cutter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applichic.Image-Cutter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A753D055248402D1007885DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Image Cutter/Image_Cutter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Image Cutter/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Image Cutter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applichic.Image-Cutter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A753D057248402D1007885DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Image CutterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applichic.Image-CutterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Image Cutter.app/Contents/MacOS/Image Cutter";
+			};
+			name = Debug;
+		};
+		A753D058248402D1007885DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Image CutterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applichic.Image-CutterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Image Cutter.app/Contents/MacOS/Image Cutter";
+			};
+			name = Release;
+		};
+		A753D05A248402D1007885DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Image CutterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Applichic.Image-CutterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Image Cutter";
+			};
+			name = Debug;
+		};
+		A753D05B248402D1007885DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Image CutterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Applichic.Image-CutterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Image Cutter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A753D025248402D0007885DD /* Build configuration list for PBXProject "Image Cutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A753D051248402D1007885DD /* Debug */,
+				A753D052248402D1007885DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A753D053248402D1007885DD /* Build configuration list for PBXNativeTarget "Image Cutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A753D054248402D1007885DD /* Debug */,
+				A753D055248402D1007885DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A753D056248402D1007885DD /* Build configuration list for PBXNativeTarget "Image CutterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A753D057248402D1007885DD /* Debug */,
+				A753D058248402D1007885DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A753D059248402D1007885DD /* Build configuration list for PBXNativeTarget "Image CutterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A753D05A248402D1007885DD /* Debug */,
+				A753D05B248402D1007885DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A753D022248402D0007885DD /* Project object */;
+}
