@@ -14,6 +14,7 @@
 		A753D038248402D1007885DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A753D036248402D1007885DD /* Main.storyboard */; };
 		A753D044248402D1007885DD /* Image_CutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753D043248402D1007885DD /* Image_CutterTests.swift */; };
 		A753D04F248402D1007885DD /* Image_CutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753D04E248402D1007885DD /* Image_CutterUITests.swift */; };
+		A753D05D24843872007885DD /* NumberEntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753D05C24843872007885DD /* NumberEntryField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A753D04A248402D1007885DD /* Image CutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image CutterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A753D04E248402D1007885DD /* Image_CutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_CutterUITests.swift; sourceTree = "<group>"; };
 		A753D050248402D1007885DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A753D05C24843872007885DD /* NumberEntryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberEntryField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				A753D039248402D1007885DD /* Info.plist */,
 				A753D03A248402D1007885DD /* Image_Cutter.entitlements */,
 				A753D033248402D1007885DD /* Preview Content */,
+				A753D05C24843872007885DD /* NumberEntryField.swift */,
 			);
 			path = "Image Cutter";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A753D030248402D0007885DD /* ContentView.swift in Sources */,
+				A753D05D24843872007885DD /* NumberEntryField.swift in Sources */,
 				A753D02E248402D0007885DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
