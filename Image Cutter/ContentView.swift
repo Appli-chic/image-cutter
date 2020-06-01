@@ -10,7 +10,8 @@ import SwiftUI
 import CoreImage
 
 struct ContentView: View {
-    @State var selectedName = ""
+    @State var fileName = ""
+    @State var filePath : URL?
     @State var image = NSImage()
     @State var oldImage = NSImage()
     @State var blockWidth: Int = 1
@@ -24,18 +25,18 @@ struct ContentView: View {
                         "Select image",
                         action: self.onSelectImage
                     )
-                    Text(self.selectedName)
+                    Text(self.fileName)
                 }.padding([.top, .leading, .trailing], 8.0)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 HStack(alignment: .center) {
                     Text("Block width: ")
-                    NumberEntryField(value: self.$blockWidth)
+                    NumberEntryField(onChange: self.onEntryChanged, value: self.$blockWidth)
                         .padding(.leading, 5.0)
                         .frame(width: 55.0)
                 }.padding([.top, .leading, .trailing], 8.0)
                 HStack(alignment: .center) {
                     Text("Block height: ")
-                    NumberEntryField(value: self.$blockHeight)
+                    NumberEntryField(onChange: self.onEntryChanged, value: self.$blockHeight)
                         .frame(width: 50.0)
                     Button(
                         "Cut image",
@@ -50,12 +51,20 @@ struct ContentView: View {
         }
     }
     
+    func onEntryChanged() {
+        if self.filePath != nil {
+            self.image = NSImage(contentsOf: self.filePath!)!
+            self.addLines()
+        }
+    }
+    
     func onSelectImage() {
         let panel = NSOpenPanel()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             let result = panel.runModal()
             if result == .OK {
-                self.selectedName = panel.url!.lastPathComponent
+                self.fileName = panel.url!.lastPathComponent
+                self.filePath = panel.url!
                 self.image = NSImage(contentsOf: panel.url!)!
                 self.oldImage = NSImage(contentsOf: panel.url!)!
                 self.addLines()
@@ -65,14 +74,24 @@ struct ContentView: View {
     
     func onCutImage() {
         let desktopURL = FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask).first!
-//        let folderPath = desktopURL.appendingPathComponent("images")
+        let folderPath = desktopURL.appendingPathComponent("images")
+        let dataPathString = folderPath.absoluteString.replacingOccurrences(of: "file://", with: "")
         let size = image.size
         var index = 0
+        
+        // Create the folder if doesn't exist
+        if !FileManager.default.fileExists(atPath: dataPathString) {
+            do {
+                try FileManager.default.createDirectory(atPath: dataPathString, withIntermediateDirectories: true, attributes: nil)
+            } catch {
+                print(error.localizedDescription);
+            }
+        }
         
         // Cut and save each images
         for i in 0...(Int(size.width) / self.blockWidth) {
             for j in 0...(Int(size.height) / self.blockHeight) {
-                let destinationURL = desktopURL.appendingPathComponent("img\(index).png")
+                let destinationURL = folderPath.appendingPathComponent("img\(index).png")
                 
                 let cgImage = self.oldImage.cgImage(forProposedRect: nil, context: NSGraphicsContext(), hints: nil)?.cropping(to: CGRect(x: i * self.blockWidth, y: j * self.blockHeight, width: self.blockWidth, height: self.blockHeight))
                 let image = NSImage(cgImage:cgImage!, size: NSSize(width: self.blockWidth, height: self.blockHeight))
@@ -87,16 +106,18 @@ struct ContentView: View {
     }
     
     func addLines() {
-        let size = image.size
-        
-        // Add vertical lines
-        for i in 0...(Int(size.width) / self.blockWidth) {
-            addLine(isVertical: true, x: i * self.blockWidth, y: 0)
-        }
-        
-        // Add Horizontal lines
-        for i in 0...(Int(size.height) / self.blockHeight) {
-            addLine(isVertical: false, x: 0, y: i * self.blockHeight)
+        if self.filePath != nil {
+            let size = image.size
+            
+            // Add vertical lines
+            for i in 1...(Int(size.width) / self.blockWidth) {
+                addLine(isVertical: true, x: i * self.blockWidth, y: 0)
+            }
+            
+            // Add Horizontal lines
+            for i in 1...(Int(size.height) / self.blockHeight) {
+                addLine(isVertical: false, x: 0, y: i * self.blockHeight)
+            }
         }
     }
     
